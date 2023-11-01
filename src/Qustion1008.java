@@ -19,6 +19,7 @@ public class Qustion1008 {
         //     sb.append(10).append('\n');
         // }
         // System.out.println(sb);
+
         double value = First / Second;
         System.out.println(value);
         String f = Double.toString(First / Second);
@@ -26,4 +27,5 @@ public class Qustion1008 {
         bw.flush();
         bw.close();
     }
+    
 }
