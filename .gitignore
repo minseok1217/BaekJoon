@@ -3,3 +3,7 @@ bin/
 lib/
 App.java
 test.java
+src_python/Include/
+Scripts/
+*.txt
+*.cfg
