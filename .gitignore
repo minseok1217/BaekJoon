@@ -7,3 +7,4 @@ src_python/Include/
 Scripts/
 *.txt
 *.cfg
+*.class
