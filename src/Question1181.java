@@ -34,8 +34,8 @@ public class Question1181 {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 50; i++){
             Set<String> set = new HashSet<>(list.get(i));
-            // List<String> list_ = List.copyOf(set);
-            for( String str : set){
+            // ans.get(i).add(set); //얘는 왜 안돼????
+            for( String str : set){// 위에 안되서 이걸로 했음
                 ans.get(i).add(str);
             }
         }
