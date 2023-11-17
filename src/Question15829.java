@@ -8,15 +8,12 @@ public class Question15829 {
         int l = Integer.parseInt(br.readLine());
         char[] ch = br.readLine().toCharArray();
         long r = 1;
-        int M = 1234567891;
+        long M = 1234567891;
         long sum = 0;
-        for(int i = 0;i < ch.length; i++){
+        for(int i = 0;i < l; i++){
             sum += (((int)ch[i]- 96) * r ) % M;
-            // System.out.println(r);
-            // System.out.println((int)(ch[i]) - 97);
-            // System.out.println((((int)ch[i]- 97) * r ) % M);
-            r *= 31;
+            r = (r * 31) % M;
         }
-        System.out.println(sum);
+        System.out.println(sum % M);
     }
 }
