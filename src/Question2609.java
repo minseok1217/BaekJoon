@@ -26,8 +26,6 @@ public class Question2609 {
             }
         }
         System.out.println(min);
-        // int max = min;
-        // System.out.println(String.format("a %d b %d", a, b));
         int max = min * (a / min) * (b / min);
         System.out.println(max);
     }
