@@ -16,16 +16,20 @@ public class Question2798 {
         for (int i = 0 ; i < n ; i++){
             array[i] = Integer.parseInt(stk.nextToken());
         }
-        int min = Integer.MAX_VALUE / 2;
+        int min = Integer.MIN_VALUE / 2;
         // System.out.println(min);
         // int min_value = 0;
+        // int[] ar; 
         for (int i = 0 ; i < n-2; i ++){
             for (int j = i + 1; j < n - 1 ; j++ ){
-                for (int k = j + 1; k < n ; k ++){
-                    if(Math.abs(array[i] + array[j] + array[k] - m) < min){
-                        // min_value = array[i] + array[j] + array[k] ;
-                        min = Math.abs(array[i] + array[j] + array[k] - m);
+                for (int k = j + 1; k < n ; k++){
+                    int chk = array[i] + array[j] + array[k];
+                    if(chk - m >= min && chk <= m){
+                        // System.out.println(chk - m);
+                        min = chk - m;
+                        
                     }
+                
                 }
             }
         }
