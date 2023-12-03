@@ -5,6 +5,10 @@ import java.util.ArrayList;
 
 public class Question2164 {
     public static void main(String[] args)throws IOException{
+      
+    }
+}
+/*
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int chk = 1;
@@ -13,7 +17,7 @@ public class Question2164 {
             list.add(i+1);
         }
         while(true){
-            System.out.println(list);
+            // System.out.println(list);
             if(list.size() == 1){
                 System.out.println(list.get(0));
                 break;
@@ -30,6 +34,5 @@ public class Question2164 {
                 list.add(0,list.get(list.size() - 1));
                 list.remove(list.size() - 1);
             }
-        }       
-    }
-}
+        } 
+ */
